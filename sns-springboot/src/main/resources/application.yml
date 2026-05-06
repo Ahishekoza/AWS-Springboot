@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    aws:
+      region:
+        static: eu-west-2
+      credentials:
+        access-key: ${AWS_ACCESS_KEY}
+        secret-key: ${AWS_SECRET_KEY}
+
+
+aws:
+  sns:
+    topic-arn: ${AWS_SNS_TOPIC_ARN}
